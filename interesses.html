@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interesses</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+     <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <h1 class="site-title"><span class="highlight">Meu</span> <span class="white-text">Portfólio</span></h1>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="introducao.html" class="nav-link">Introdução</a></li>
+                    <li><a href="historico.html" class="nav-link">Histórico</a></li>
+                    <li><a href="aprendizado.html" class="nav-link">Aprendizado</a></li
+                    <li><a href="interesses.html" class="nav-link">Interesses</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+<section id="interesses" class="section">
+    <div class="container">
+        <h2><span class="highlight">Interesses</span></h2>
+        <p style="color: orange;">Sou fascinado por tecnologia e design. Gosto de transformar ideias em interfaces funcionais e atrativas</span>.</p>
+    </div>
+</section>
+   <section id="galeria" class="section">
+            <div class="container">
+                <h2>Minha <span class="highlight">Galeria</span></h2>
+                <div class="slideshow-container">
+                    <div class="slide-group">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" alt="">
+                       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" alt="">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" alt="">
+                    </div>
+                    <div class="slide-group">
+                       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png" alt="">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png" alt="">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png" alt="">
+                    </div>
+                    <div class="slide-group">
+                       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png" alt="">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png" alt="">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+         <script>
+        let currentIndex = 0;
+        const groups = document.querySelectorAll('.slide-group');
+        function showSlides() {
+            groups.forEach((group, index) => {
+                group.style.display = index === currentIndex ? 'flex' : 'none';
+            });
+            currentIndex = (currentIndex + 1) % groups.length;
+        }
+        showSlides();
+        setInterval(showSlides, 5000); // muda a cada 5 segundos
+    </script>
+        <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

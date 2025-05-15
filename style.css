@@ -1,0 +1,366 @@
+/* Tema escuro com detalhes em laranja */
+body.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header.site-header {
+    background-color: #1e1e1e;
+    padding: 30px 0;
+    border-bottom: 2px solid #ff6600;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center; /* Centraliza somente o título h2 */
+}
+h2 {
+    color: white;
+}
+
+
+.logo-area h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.highlight {
+    color: #ff6600;
+}
+
+.white-text {
+    color: white;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav .nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-nav .nav-link:hover {
+    color: #ff6600;
+}
+
+.section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;         /* Negrito */
+    display: block;            /* Faz o label ocupar a linha inteira */
+    margin-bottom: 4px;        /* Espaço entre o label e o input */
+}
+
+.form-group {
+    margin-bottom: 16px;       /* Espaço entre os grupos */
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+}
+
+.whatsapp-contact {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.whatsapp-contact img {
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Depoimentos */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.testimonial {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 240px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+}
+
+/* Galeria */
+.slideshow-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-group {
+    display: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slide-group img {
+    width: 32%;
+    border-radius: 8px;
+}
+
+/* Barras de aprendizado */
+.learning-progress .progress-item p {
+    color: white;            /* Cor branca */
+    font-weight: bold;       /* Negrito */
+    margin-bottom: 6px;      /* Espaço entre o nome e a barra */
+}
+
+.learning-progress .progress-bar {
+    background-color: #444;  /* Fundo da barra */
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.learning-progress .progress-fill {
+    background-color: orange;  /* Cor de preenchimento da barra */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.learning-progress .progress-value {
+    color: white;
+    font-weight: bold;
+    margin-top: 8px; /* Espaço entre a barra e a porcentagem */
+    display: block;  /* Garante que fique embaixo da barra */
+    text-align: center;
+}
+
+/* Comentário */
+
+.comment-form h2 {
+    color: white;        /* Deixa o título branco */
+    text-align: center;  /* (Opcional) Centraliza o título */
+    margin-bottom: 20px;
+}
+
+.comment-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment-form .form-group {
+    margin-bottom: 16px;
+}
+
+.comment-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: white; /* se estiver em tema escuro */
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;           /* Alinha com a largura máxima definida */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222; /* se quiser manter tema escuro */
+    color: white;           /* texto branco no tema escuro */
+}
+
+.submit-button {
+    display: block;
+    margin: 20px auto 0 auto;  /* Centraliza o botão */
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #ff8800; /* efeito hover opcional */
+}
+.site-footer {
+    background-color: #111;     /* cor de fundo escura, se desejar */
+    color: white;               /* cor do texto */
+    padding: 20px 0;
+    text-align: center;         /* centraliza o texto */
+    font-size: 14px;
+}
+
+/* Seção de introdução refinada */
+#introducao h2 {
+  margin-top: -20px; /* sobe o título */
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: orange;
+}
+
+/* Caixa moderna com fundo escuro, borda laranja e animação */
+.intro-box-modern {
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border: 1px solid #ff9900aa;
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.15);
+  color: #f0f0f0;
+  font-size: 1.1em;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 1.2s ease;
+  transition: transform 0.3s ease;
+}
+
+.intro-box-modern:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro-photo img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #ff7f27;
+  box-shadow: 0 0 10px rgba(255, 127, 39, 0.4);
+}
+
+/* Ícone decorativo acima do texto */
+.intro-icon {
+  font-size: 2em;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro-photo img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #ff7f27;
+  box-shadow: 0 0 10px rgba(255, 127, 39, 0.4);
+}
+
+
+
+.nome-destaque {
+  color: #ffffff;
+  background: linear-gradient(90deg, orange, #ff6600);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
